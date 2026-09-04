@@ -14,7 +14,7 @@
 
 ## 📖 Overview
 
-**ChitraKala.com** (चित्रकला — "the art of pictures") is a Pinterest-style web application that lets users search and discover visual media from a single unified interface. Instead of jumping between separate stock-photo, stock-video, and GIF sites, ChitraKala brings them together — aggregating results from three best-in-class media APIs into one seamless, masonry-style browsing experience.
+**ChitraKala.com** is a Pinterest-style web application that lets users search and discover visual media from a single unified interface. Instead of jumping between separate stock-photo, stock-video, and GIF sites, ChitraKala brings them together — aggregating results from three best-in-class media APIs into one seamless, masonry-style browsing experience.
 
 ---
 
