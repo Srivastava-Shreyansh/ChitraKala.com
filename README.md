@@ -36,7 +36,6 @@
 
 - **Frontend:** React, Redux
 - **Data Sources:** Unsplash API (photos), Pexels API (videos), GIPHY API (GIFs)
-- **In progress:** Glassmorphism UI redesign, GSAP animations, Barba.js page transitions
 
 ---
 
@@ -97,37 +96,6 @@ chitrakala/
 └── package.json
 ```
 *(Adjust to match your actual folder layout.)*
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Glassmorphism UI redesign
-- [ ] GSAP scroll & entrance animations
-- [ ] Barba.js smooth page transitions
-- [ ] Dark mode
-- [ ] User collections / boards
-- [ ] Dynamic favicon configuration
-- [ ] Infinite scroll & advanced filters
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/<your-username>/chitrakala/issues) or open a pull request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a pull request
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE) — feel free to use, modify, and distribute.
 
 ---
 
