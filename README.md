@@ -1,5 +1,7 @@
 # 🎨 ChitraKala.com
 
+```😎A special thanks to Sarthak Sir and Sheryians Coding School🎯❤️```
+
 **A Pinterest-inspired media discovery platform — search and explore photos, videos, and GIFs, all in one place.**
 
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
@@ -13,12 +15,6 @@
 ## 📖 Overview
 
 **ChitraKala.com** (चित्रकला — "the art of pictures") is a Pinterest-style web application that lets users search and discover visual media from a single unified interface. Instead of jumping between separate stock-photo, stock-video, and GIF sites, ChitraKala brings them together — aggregating results from three best-in-class media APIs into one seamless, masonry-style browsing experience.
-
-| Media Type | Source          |
-|------------|-----------------|
-| 📷 Photos  | Unsplash API    |
-| 🎬 Videos  | Pexels API      |
-| 🎞️ GIFs    | GIPHY API       |
 
 ---
 
