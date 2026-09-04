@@ -119,9 +119,3 @@ chitrakala/
 ```
 
 ---
-
-## 🙌 Acknowledgements
-
-- [Unsplash API](https://unsplash.com/developers)
-- [Pexels API](https://www.pexels.com/api/)
-- [GIPHY API](https://developers.giphy.com/)
