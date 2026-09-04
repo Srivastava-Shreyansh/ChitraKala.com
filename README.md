@@ -64,17 +64,17 @@
 
    Create a `.env` file in the project root and add your API keys:
    ```env
-   REACT_APP_UNSPLASH_ACCESS_KEY=your_unsplash_access_key
-   REACT_APP_PEXELS_API_KEY=your_pexels_api_key
-   REACT_APP_GIPHY_API_KEY=your_giphy_api_key
+   VITE_UNSPLASH_API_KEY=your_unsplash_api_key
+   VITE_PEXELS_API_KEY=your_pexels_api_key
+   VITE_GIPHY_API_KEY=your_giphy_api_key
    ```
 
 4. **Run the development server**
    ```bash
-   npm start
+   npm run dev
    ```
 
-   The app will be available at `http://localhost:3000`.
+   The app will be running at `http://localhost:5173`.
 
 ---
 
@@ -83,20 +83,41 @@
 ```
 chitrakala/
 ├── public/
+│   ├── favicon.svg             # Dynamic SVG favicon
+│   └── icons.svg               # SVG icon sprites
 ├── src/
-│   ├── components/       # Reusable UI components (cards, search bar, etc.)
-│   ├── redux/
-│   │   ├── actions/
-│   │   ├── reducers/
-│   │   └── store.js
-│   ├── pages/            # Home, Search, Collections, etc.
-│   ├── services/         # API calls to Unsplash / Pexels / GIPHY
-│   ├── App.js
-│   └── index.js
-├── .env
-└── package.json
+│   ├── api/
+│   │   └── mediaApi.js         # Unified API client (Unsplash, Pexels, GIPHY)
+│   ├── app/
+│   │   ├── features/
+│   │   │   ├── collectionSlice.js # Redux slice for bookmarks & custom collections
+│   │   │   └── searchSlice.js     # Redux slice for query state, active tab & cached results
+│   │   └── store.js            # Redux Toolkit centralized store config
+│   ├── components/
+│   │   ├── CollectionCard.jsx  # Card layout previewing user saved collections
+│   │   ├── FaviconModal.jsx    # Interactive customizer for dynamic tab favicon
+│   │   ├── MediaDetailModal.jsx# High-res modal preview with metadata & download/save actions
+│   │   ├── NavBar.jsx          # Glassmorphic top navigation header
+│   │   ├── ResultCard.jsx      # Individual media card with hover actions & tags
+│   │   ├── ResultGrid.jsx      # Responsive Pinterest-style masonry media grid
+│   │   ├── SearchBar.jsx       # Real-time search bar with quick filters
+│   │   └── Tabs.jsx            # Media type switcher (Photos, Videos, GIFs)
+│   ├── context/
+│   │   └── MediaModalContext.jsx # React context provider for global detail modal
+│   ├── pages/
+│   │   ├── CollectionPage.jsx  # Saved media boards & collections view
+│   │   ├── HomePage.jsx        # Landing page with trending showcase & quick discovery
+│   │   └── SearchPage.jsx      # Main media search & exploration page
+│   ├── App.jsx                 # Main application component & tab/view routing
+│   ├── index.css               # Global styling, theme tokens & glassmorphism utilities
+│   └── main.jsx                # React root entry point with Redux Store Provider
+├── .env                        # Environment variables (API keys)
+├── .gitignore
+├── eslint.config.js            # ESLint configuration
+├── index.html                  # HTML entry point with Google Fonts & metadata
+├── package.json                # Project dependencies and npm scripts
+└── vite.config.js              # Vite bundler configuration
 ```
-*(Adjust to match your actual folder layout.)*
 
 ---
 
